@@ -1,0 +1,47 @@
+body {
+ font-family: "Helvetica Neue";
+ margin: 0; /* Quita cualquier margen de la página */
+ height: 100vh; /* Establece la altura del cuerpo para que ocupe toda la pantalla */
+ overflow: hidden; /* Evita que la página haga scroll */
+}
+
+.container {
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ grid-template-rows: repeat(2, 1fr);
+ width: 100vw; /* El contenedor ahora ocupa todo el ancho de la pantalla */
+ height: 100vh; /* El contenedor ahora ocupa toda la altura de la pantalla */
+ margin: 0 auto;
+ position: relative;
+}
+
+.box {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ color: aliceblue;
+}
+
+#Vegeta {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ width: 20vw;
+ height: 30vh;
+ transform: translate(-50%, -50%);
+}
+
+.purple {
+ background-color: purple;
+}
+
+.orange {
+ background-color: orange;
+}
+
+.green {
+ background-color: yellowgreen;
+}
+
+.pink {
+ background-color: palevioletred;}
