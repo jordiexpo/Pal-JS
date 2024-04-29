@@ -1,16 +1,17 @@
 body {
  font-family: "Helvetica Neue";
- margin: 0; /* Quita cualquier margen de la página */
- height: 100vh; /* Establece la altura del cuerpo para que ocupe toda la pantalla */
- overflow: hidden; /* Evita que la página haga scroll */
+ font-size: 30px;
+ margin: 0; 
+ height: 100vh; 
+ overflow: hidden; 
 }
 
 .container {
  display: grid;
  grid-template-columns: repeat(2, 1fr);
  grid-template-rows: repeat(2, 1fr);
- width: 100vw; /* El contenedor ahora ocupa todo el ancho de la pantalla */
- height: 100vh; /* El contenedor ahora ocupa toda la altura de la pantalla */
+ width: 100vw; 
+ height: 100vh; 
  margin: 0 auto;
  position: relative;
 }
@@ -20,15 +21,20 @@ body {
  align-items: center;
  justify-content: center;
  color: aliceblue;
+ flex-direction: column;
 }
 
 #Vegeta {
  position: absolute;
- top: 50%;
- left: 50%;
+ top: 49%;
+ left: 53%;
  width: 20vw;
  height: 30vh;
  transform: translate(-50%, -50%);
+ -webkit-transform: translate(-50%, -50%);
+ -moz-transform: translate(-50%, -50%);
+ -ms-transform: translate(-50%, -50%);
+ -o-transform: translate(-50%, -50%);
 }
 
 .purple {
@@ -45,3 +51,29 @@ body {
 
 .pink {
  background-color: palevioletred;}
+
+ button{
+  width: 5vw;
+  height: 5vh;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+progress {
+  width: 30vw; /* Ajusta según tus necesidades */
+  height: 10vh; /* Ajusta según tus necesidades */
+  margin: 10px auto;
+}
+
+progress::-webkit-progress-bar {
+  background-color: slategray; /* Color de fondo de la barra */
+}
+
+progress::-webkit-progress-value {
+  background-color: green; /* Color de progreso */
+}
+
+progress::-moz-progress-bar {
+  background-color: green;} /* Color de progreso */
