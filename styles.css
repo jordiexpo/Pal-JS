@@ -54,26 +54,31 @@ body {
 
  button{
   width: 5vw;
-  height: 5vh;
-  border-radius: 30px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
+  height: 10vh;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  background-color: rgb(51, 42, 0);
+  
 }
 progress {
-  width: 30vw; /* Ajusta según tus necesidades */
-  height: 10vh; /* Ajusta según tus necesidades */
+  width: 30vw;
+  height: 5vh;
   margin: 10px auto;
+  border-radius: 50px ;
+  -webkit-border-radius: 50px ;
+  -moz-border-radius: 50px ;
+  -ms-border-radius: 50px ;
+  -o-border-radius: 50px ;
 }
 
 progress::-webkit-progress-bar {
-  background-color: slategray; /* Color de fondo de la barra */
+  background-color: red 
 }
 
 progress::-webkit-progress-value {
-  background-color: green; /* Color de progreso */
-}
+  background-color: green;
 
-progress::-moz-progress-bar {
-  background-color: green;} /* Color de progreso */
+}

@@ -1,20 +1,32 @@
 document.querySelectorAll('.box button').forEach((button) => {
- button.addEventListener('click', (e) => {
-   
-   const progressBar = e.target.nextElementSibling;
-
-   
-   if (progressBar && progressBar.tagName === 'PROGRESS') {
-     
-     let newValue = parseFloat(progressBar.value) + 10;
-
-     
-     if (newValue > progressBar.max) {
-       newValue = progressBar.max;
-     }
+  button.addEventListener('click', (e) => {
+    const buttonContent = e.target.textContent.trim();
+    
+    let progressBar;
+    
+    switch (buttonContent) {
+      case '👑': 
+        progressBar = document.getElementById('pride-bar');
+        break;
+      case '💪🏻':
+        progressBar = document.getElementById('power-bar');
+        break;
+      case '🩷': 
+        progressBar = document.getElementById('life-bar');
+        break;
+      case '❤️‍🔥':
+        progressBar = document.getElementById('love-bar');
+        break;
+    }
 
     
-     progressBar.value = newValue;
-   }
- });
+    if (progressBar) {
+      progressBar.value += 10;
+      
+      if (progressBar.value >= progressBar.max) {
+        progressBar.value = progressBar.max; //
+        decreaseProgressBar(progressBar);
+      }
+    }
+  });
 });
